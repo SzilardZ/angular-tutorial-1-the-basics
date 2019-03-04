@@ -7,4 +7,11 @@ import {Component} from '@angular/core';
 })
 
 export class DirectivePracticeComponent {
+  showSecret = false;
+  logs = [];
+
+  onToggleDetails() {
+    this.showSecret = !this.showSecret;
+    this.logs.push(this.logs.length + 1);
+    }
 }
